@@ -9,6 +9,9 @@ body {
     display: grid;
     place-items: center;
     height:95vh;
+    background-image: url('imgs/k71.png'),url('imgs/k72.png');
+    background-repeat: no-repeat;
+    background-position: left bottom,right bottom;
 }
 
 .container {
@@ -92,38 +95,46 @@ body {
     100%{ transform:rotate(1deg)}
 }
 
+#undo {
+    color:#FFF;
+    width:50px;
+}
+
 .button {
     color:rgb(0, 0, 0);
     background-color: rgb(170, 234, 171);
-    padding:10px 20px;
-    border-radius: 30px;
+    padding:20px 30px;
+    border-radius: 40px;
     cursor:pointer;
+    font-size:40px;
 }
 
 .button:hover {
     background-color: rgb(108, 148, 109);
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in;
+}
+
+.button:active {
+    background-color: rgb(44, 74, 44);
+    transition: background-color 0.5s ease-in-out;
 }
 
 h1 {
     color: white;
     text-align: center;
-    font-size:60px;
+    font-size:90px;
     letter-spacing: 0.1em;
-    animation:typer step(8) 2s ease-in-out;
-}
-
-@keyframes typer {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
 }
 
 li {
-    font-size:20px;
+    font-size:40px;
     list-style-type: "㊗️ ";
     color:#FFF;
+}
+
+.dinosaur {
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    display: inline-block;
 }
